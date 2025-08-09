@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN ESTATES | Premium Real Estate Solutions</title>
+    <meta name="description" content="Find your dream home with our exclusive luxury properties worldwide">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="css/animations.css"> -->
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="house1.html"
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                 <span><img src="/Images/logo.png " alt="logo" width='100'> </span> 
+                <a href="index.html">      GREEN ESTATES</a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#agents">Agents</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-primary">Schedule a Viewing</a>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('images/img\ 1.jpg')">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Discover Your Dream Home</h1>
+                        <p>Exclusive luxury properties in the world's most desirable locations</p>
+                        <a href="#properties" class="btn btn-primary">Explore Properties</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide" style="background-image: url('images/img2.png')">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Luxury Redefined</h1>
+                        <p>Unparalleled service for discerning clients</p>
+                        <a href="#services" class="btn btn-primary">Our Services</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide" style="background-image: url('images/img3.jpeg')">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Global Presence</h1>
+                        <p>Prime properties in 20+ countries worldwide</p>
+                        <a href="#contact" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-nav">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="hero-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <h2>Find Your Perfect Property</h2>
+                <form id="property-search">
+                    <div class="form-group">
+                        <select id="location" name="location">
+                            <option value="">Select Location</option>
+                            <option value="new-york">Accra</option>
+                            <option value="london">Madina</option>
+                            <option value="paris">Kasoa</option>
+                            <option value="dubai">Dubai</option>
+                            <option value="tokyo">Tokyo</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="property-type" name="property-type">
+                            <option value="">Property Type</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="penthouse">Penthouse</option>
+                            <option value="mansion">Mansion</option>
+                            <option value="land">Land</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="price-range" name="price-range">
+                            <option value="">Price Range</option>
+                            <option value="1m-5m">$1M - $5M</option>
+                            <option value="5m-10m">$5M - $10M</option>
+                            <option value="10m-20m">$10M - $20M</option>
+                            <option value="20m+">$20M+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="bedrooms" name="bedrooms">
+                            <option value="">Bedrooms</option>
+                            <option value="1">1+</option>
+                            <option value="2">2+</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
+                            <option value="5">5+</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Search Properties</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="featured-properties">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Properties</h2>
+                <p>Our curated selection of premium properties</p>
+            </div>
+
+<a href="/house1.html">  <div class="properties-grid">
+                <!-- Property items will be loaded via JavaScript -->
+
+            </div></a>
+            
+          
+            
+            <div class="section-footer">
+                <a href="#" class="btn btn-secondary">View All Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Premium Services</h2>
+                <p>Tailored solutions for luxury real estate</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Property Acquisition</h3>
+                    <p>Expert guidance in finding and securing your ideal property worldwide.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Investment Advisory</h3>
+                    <p>Strategic advice for building and managing your real estate portfolio.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Legal Assistance</h3>
+                    <p>Comprehensive legal support for all your real estate transactions.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Interior Design</h3>
+                    <p>Bespoke interior design services to create your perfect living space.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Property Management</h3>
+                    <p>Complete management solutions for your luxury properties.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Relocation</h3>
+                    <p>Seamless relocation services for international clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agents Section -->
+    <section id="agents" class="agents-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Expert Agents</h2>
+                <p>Our team of dedicated professionals</p>
+            </div>
+            
+            <div class="agents-grid">
+                <div class="agent-card">
+                    <div class="agent-image">
+                        <img src="images/agent-1.jpg" alt="Sarah Johnson">
+                        <div class="agent-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="agent-info">
+                        <h3>Sarah Johnson</h3>
+                        <p class="agent-title">Senior Property Consultant</p>
+                        <p class="agent-contact">sarah@luxuryestates.com</p>
+                        <p class="agent-phone">+1 (212) 555-1234</p>
+                    </div>
+                </div>
+                
+                <div class="agent-card">
+                    <div class="agent-image">
+                        <img src="images/agent-2.jpg" alt="Michael Chen">
+                        <div class="agent-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="agent-info">
+                        <h3>Michael Chen</h3>
+                        <p class="agent-title">International Properties Director</p>
+                        <p class="agent-contact">michael@luxuryestates.com</p>
+                        <p class="agent-phone">+1 (212) 555-5678</p>
+                    </div>
+                </div>
+                
+                <div class="agent-card">
+                    <div class="agent-image">
+                        <img src="images/agent-3.jpg" alt="Elena Rodriguez">
+                        <div class="agent-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="agent-info">
+                        <h3>Elena Rodriguez</h3>
+                        <p class="agent-title">Luxury Homes Specialist</p>
+                        <p class="agent-contact">elena@luxuryestates.com</p>
+                        <p class="agent-phone">+1 (212) 555-9012</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <p>What our clients say about us</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"Luxury Estates found me the perfect penthouse in Manhattan. Their attention to detail and market knowledge is unparalleled."</p>
+                        <div class="client-info">
+                            <img src="images/client-1.jpg" alt="James Wilson">
+                            <div>
+                                <h4>James Wilson</h4>
+                                <p>CEO, Wilson Holdings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The team handled our international relocation with such professionalism. Every detail was taken care of seamlessly."</p>
+                        <div class="client-info">
+                            <img src="images/client-2.jpg" alt="Sophia Martinez">
+                            <div>
+                                <h4>Sophia Martinez</h4>
+                                <p>Founder, TechVista</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Their investment advisory service helped me build a diversified real estate portfolio that outperforms the market."</p>
+                        <div class="client-info">
+                            <img src="images/client-3.jpg" alt="David Kim">
+                            <div>
+                                <h4>David Kim</h4>
+                                <p>Managing Partner, Horizon Capital</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Green Estates</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla, mauris a hendrerit congue, sem neque luctus justo, sit amet imperdiet augue metus vitae eros. Sed fermentum magna vel erat tincidunt, at dictum orci vestibulum. Cras feugiat magna et velit fermentum malesuada. Integer vulputate, nisl sit amet pulvinar cursus, magna mi feugiat arcu, eget scelerisque nulla justo at lorem </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>18+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1,250+</h3>
+                            <p>Properties Sold</p>
+                        </div>
+                        <div class="stat">
+                            <h3> Gh₵ 9.8B</h3>
+                            <p>Total Sales Volume</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="about-image">
+                    <img src="images/about-us.jpg" alt="About Luxury Estates"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our team</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Headquarters</h3>
+                            <p>Accra Park Avenue, 15th Floor<br>Ghana, Airport</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Phone</h3>
+                            <p>000000000000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>info@greenestates.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Hours</h3>
+                            <p>Monday - Friday: 9am - 7pm<br>Saturday: 10am - 5pm</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="property-inquiry">Property Inquiry</option>
+                                <option value="valuation">Property Valuation</option>
+                                <option value="investment">Investment Advice</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Receive exclusive property listings and market insights</p>
+                <form id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" id="newsletter-email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Green Estates</h3>
+                    <p>Premium real estate services for discerning clients worldwide.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#agents">Agents</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Property Acquisition</a></li>
+                        <li><a href="#">Investment Advisory</a></li>
+                        <li><a href="#">Legal Assistance</a></li>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Property Management</a></li>
+                        <li><a href="#">Global Relocation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Accra Park Avenue, 15th Floor</li>
+                        <li><i class="fas fa-phone-alt"></i>000000000000</li>
+                        <li><i class="fas fa-envelope"></i> info@greenestates.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Luxury Estates. All Rights Reserved.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+    <script src="property-filter.js"></script>
+    <script src="contact-form.js"></script>
+</body>
+</html>
