@@ -101,7 +101,7 @@ img {
 .section-header {
     text-align: center;
     margin-bottom: 60px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .section-header h2 {
@@ -168,7 +168,7 @@ img {
 
 .logo a {
     font-family: var(--font-heading);
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 700;
     color: var(--primary-color);
     letter-spacing: 1px;
@@ -212,8 +212,8 @@ img {
 }
 
 .header-cta .btn {
-    padding: 10px 20px;
-    font-size: 13px;
+    padding: 10px 15px;
+    font-size: 11px;
 }
 
 .mobile-menu-btn {
@@ -254,7 +254,7 @@ img {
     opacity: 0;
     transition: opacity 1.5s ease;
     background-blend-mode:color-burn;
-        border: 11px solid red;
+        /* border: 11px solid red; */
      background-blend-mode: color-dodge;
 }
 
@@ -278,7 +278,7 @@ img {
     color:rgb(238, 228, 228);
     font-weight:900;
     line-height: 1.1;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* width: 290px; */
 
 }
@@ -771,19 +771,30 @@ img {
 
 /* About Section */
 .about-section {
+  
     padding: 100px 0;
     background-color: var(--light-color);
+   }
+
+.about-section .container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-content {
+          
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     align-items: center;
+
+
 }
 
 .about-text h2 {
     margin-bottom: 20px;
+  
 }
 
 .about-text p {

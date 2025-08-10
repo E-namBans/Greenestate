@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const properties = [
     {
         id: 1,
-        title: "4 Bedroom House",
+        title: "Four Bedroom House",
         price: "$8,300,000",
         address: "East Legon Hills, Accra" ,
         bedrooms: 4,
@@ -181,91 +181,73 @@ const properties = [
         type: "House",
         featured: true,
         image: "Images/img3.jpeg",
-        agent: {
-            name: "Show more",
-            image: "images/agent-1.jpg"
-        }
+        reference:"001"
     },
     {
         id: 2,
-        title: "Waterfront Villa in Miami",
+        title: "The Gardens ",
         price: "$12,750,000",
-        address: " Biscayne Blvd, Miami, FL",
+        address: " Accra",
         bedrooms: 5,
         bathrooms: 6,
         sqft: 6800,
         type: "Villa",
         featured: true,
-        image: "img 1.jpg",
-        agent: {
-            name: "Michael Chen",
-            image: "images/agent-2.jpg"
-        }
+        image: "Images/house2/mainbuilding1.jpeg",
+        reference:"002"
     },
     {
         id: 3,
-        title: "Historic Mansion in London",
+        title: "Intimate Studio Apartment",
         price: "£25,000,000",
-        address: "45 Kensington Park, London, UK",
+        address: " Accra",
         bedrooms: 7,
         bathrooms: 8,
         sqft: 12500,
         type: "Mansion",
         featured: true,
-        image: "images/property-3.jpg",
-        agent: {
-            name: "Elena Rodriguez",
-            image: "images/agent-3.jpg"
-        }
+       image: "Images/house3/h3.jpeg",
+       reference:"003"
     },
     {
         id: 4,
-        title: "Modern Apartment in Tokyo",
-        price: "¥850,000,000",
-        address: "Roppongi Hills, Tokyo, Japan",
+        title: "Modern Apartment",
+        price: "$850,000,000",
+        address: "Cantonments",
         bedrooms: 3,
         bathrooms: 3.5,
         sqft: 2800,
         type: "Apartment",
         featured: true,
-        image: "images/property-4.jpg",
-        agent: {
-            name: "Sarah Johnson",
-            image: "images/agent-1.jpg"
-        }
+       image: "Images/house4/h4.jpeg",
+        reference:"004"
+        
     },
     {
         id: 5,
-        title: "Beachfront Estate in Malibu",
+        title: "Two Bedroom Apartment",
         price: "$32,000,000",
-        address: "25000 Pacific Coast Hwy, Malibu, CA",
+        address: "Madina, Accra",
         bedrooms: 6,
         bathrooms: 7,
         sqft: 9800,
         type: "Estate",
         featured: true,
-        image: "images/property-5.jpg",
-        agent: {
-            name: "Michael Chen",
-            image: "images/agent-2.jpg"
-        }
+        image: "Images/house5/h5.jpeg",
+        reference:"005"
     },
     {
         id: 6,
-        title: "Ski Chalet in Aspen",
+        title: "Deluxe Kass Studio",
         price: "$18,500,000",
-        address: "300 Mountain View Dr, Aspen, CO",
+        address: "Airport Residential Area, Accra",
         bedrooms: 5,
-        bathrooms: 5.5,
-       
+        bathrooms: 5.5,       
         sqft: 7500,
         type: "Chalet",
         featured: true,
-        image: "images/property-6.jpg",
-        agent: {
-            name: "Elena Rodriguez",
-            image: "images/agent-3.jpg"
-        }
+        image: "Images/house6/h6.jpeg",
+        reference:"006"
     }
 ];
 
@@ -297,10 +279,14 @@ function loadProperties(filteredProperties = properties) {
                     <div class="property-feature">
                         <i class="fas fa-ruler-combined"></i> ${property.sqft.toLocaleString()} sqft
                     </div>
+                     <div class="property-feature">
+                        Reference: ${property.reference} 
+                    </div>
                 </div>
                 <div class="property-footer">
                    
                     <div class="property-actions">
+                   
                         <a href="#"><i class="fas fa-heart"></i></a>
                         <a href=""><i class="fas fa-envelope"></i></a>
                     </div>

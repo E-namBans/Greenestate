@@ -5,12 +5,16 @@ margin-top: 150px;
 
 .image_map{
     display: flex;
-    border: 2px solid red;
+   margin-bottom: 20px;
 }
 
 .images{
-    border: 2px solid green;
-    width: 80%;
+   
+    width: 90%;
+    margin-right: 10px;
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
 }
 
 .facility{
@@ -20,7 +24,7 @@ margin-top: 150px;
 }
 
 .areaInfo{
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
