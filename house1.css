@@ -1,5 +1,18 @@
+
+
+
+.search-box {
+    background-color: var(--white);
+    padding: 100px !important;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+     /* background-color: rgb(179, 15, 15); */
+     
+}
+
+
 section .container h2{
-margin-top: 150px;
+margin-top: 10px;
 }
 
 
@@ -8,8 +21,7 @@ margin-top: 150px;
    margin-bottom: 20px;
 }
 
-.images{
-   
+.images{   
     width: 90%;
     margin-right: 10px;
      display: grid;
@@ -29,3 +41,5 @@ margin-top: 150px;
     justify-content: space-around;
     margin-bottom: 20px;
 }
+
+
