@@ -1,7 +1,7 @@
 /* Base Styles */
 :root {
-    --primary-color: hsl(108, 81%, 8%);
-    --secondary-color: #333;
+    --primary-color:  #1e5536;
+    --secondary-color:   #2b8150;
     --dark-color: #222;
     --light-color: #f9f9f9;
     --text-color: #555;
@@ -63,7 +63,7 @@ img {
 
 .btn {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 9px 20px;
     border-radius: var(--border-radius);
     font-weight: 600;
     text-transform: uppercase;
@@ -80,7 +80,7 @@ img {
 }
 
 .btn-primary:hover {
-    background-color: #0aa60a;
+    background-color: var(--secondary-color);
     transform: translateY(-3px);
     box-shadow: var(--box-shadow);
 }
