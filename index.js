@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         preloader.classList.add('fade-out');
         setTimeout(() => {
             preloader.style.display = 'none';
-        }, 500);
+        }, 1800);
     }, 1000);
 
     // Mobile Menu Toggle
