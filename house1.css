@@ -8,9 +8,7 @@
 
 
 #house1{
-        /* padding-top: 20px; */
-    margin-top: 30px !important;
-    /* border: 3px solid green; */
+           margin-top: 30px !important;
 }
 
 
@@ -21,42 +19,36 @@
           justify-content: space-between;
                     width: 100%;
             gap: 5px;
-            /* border: 3px solid red; */
-            height: 70vh;
+                  height: 70vh;
                           }
 
         
         /* First Column - Thumbnails */
         .thumbnail-column {
              width: 25%;    
-     display: grid !important;   
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)) !important;
+     display: column !important;   
+    grid-template-columns: repeat(auto-fit, minmax(190px, 11fr)) !important;
    
-    row-gap: 11px !important;
-/* border: 2px solid rgb(17, 0, 255); */
+    row-gap: 1px !important;
+    column-gap: 1px;
 
                    }
 
                     .thumbnail-column img {
-                        height: 80%;
-                        width:90%;
-                      
-                        padding: 5px;
-                    }
+                        height: max-content !important;
+                        width:45%;                   }
         
         .thumbnail {
-            width: 100px !important;
-            aspect-ratio: 1;
+                      aspect-ratio: 1;
             object-fit: cover;
             cursor: pointer;
             border: 2px solid transparent;
             border-radius: 5px;
             transition: all 0.3s;
-            /* border: 3px solid #2E8B57; */
         }
         
         .thumbnail.active {
-            /* border-color: #2E8B57 !important; */
+            border-color: #2E8B57 !important;
             transform: scale(1.05);
         }
         
@@ -129,11 +121,11 @@
             .thumbnail-column {
                 width: 100%;
              display: flex !important;
-           
+           margin-top: -100px;
                 overflow-x: auto;
-                overflow-y:auto;
+                overflow-y:hidden;
                 /* border: 3px solid rgb(21, 11, 110); */
-                height: 450px;
+                height: 200px !important;
             }
             
             .content-column {

@@ -6,9 +6,12 @@
             
             const images = [
                 "Images/house1/504624881.jpg?text=Image+1",
-                "Images/house1/504624881.jpg?text=Image+2",
-                "/Images/house1/504649304.jpg?text=Image+3",
-                "https://via.placeholder.com/600x400/006400/FFFFFF?text=Image+4"
+                "Images/house1/504649304.jpg?text=Image+2",
+                "/Images/house1/556380037.jpg?text=Image+3",
+                 "/Images/house1/504624881.jpg?text=Image+4",
+                  "/Images/house1/504624881.jpg?text=Image+5",
+                   "/Images/house1/504624881.jpg?text=Image+6"
+ 
             ];
             
             let currentIndex = 0;
@@ -43,13 +46,13 @@
                 });
             });
             
-            // Navigation buttons
-           // leftBtn.addEventListener('click', () => updateImage(currentIndex - 1));
-            //rightBtn.addEventListener('click', () => updateImage(currentIndex + 1));
+           // Navigation buttons
+           leftBtn.addEventListener('click', () => updateImage(currentIndex - 1));
+            rightBtn.addEventListener('click', () => updateImage(currentIndex + 1));
             
-            // Keyboard navigation
-        //    document.addEventListener('keydown', function(e) {
-          //      if (e.key === 'ArrowLeft') updateImage(currentIndex - 1);
-            //    if (e.key === 'ArrowRight') updateImage(currentIndex + 1);
-            //});
+           // Keyboard navigation
+           document.addEventListener('keydown', function(e) {
+               if (e.key === 'ArrowLeft') updateImage(currentIndex - 1);
+               if (e.key === 'ArrowRight') updateImage(currentIndex + 1);
+            });
         });
