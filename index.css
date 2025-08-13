@@ -236,8 +236,8 @@ img {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    min-height: 700px;
+    height: 95vh;
+    min-height: 600px;
     position: relative;
     overflow: hidden;
     margin-top: 62px;
@@ -316,10 +316,11 @@ text-align: center;
     top: 50%;
     width: 100%;
     transform: translateY(-50%);
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     padding: 0 20px;
     z-index: 10;
+    display: none;
 }
 
 .hero-nav button {
