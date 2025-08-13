@@ -41,7 +41,7 @@ padding-top: -40px !important;
 }
 
 #property-search button {
-    /* grid-column: 1 / -1; */
+    grid-column: 1 / -1;
     justify-self: center;
     margin-top: -4px !important;
 

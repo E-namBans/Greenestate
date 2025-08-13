@@ -172,7 +172,8 @@ img {
     font-weight: 700;
     color: var(--primary-color);
     letter-spacing: 1px;
-        width: 310px;
+        /* width: 30px; */
+        height: 30px;
       align-items: center;
     display: flex;
     /* border: 3px solid rgb(102, 19, 196); */
@@ -212,7 +213,7 @@ img {
 }
 
 .header-cta .btn {
-    padding: 10px 15px;
+    padding: 9px 15px;
     font-size: 11px;
 }
 
@@ -253,9 +254,14 @@ img {
     background-repeat: no-repeat;
     opacity: 0;
     transition: opacity 1.5s ease;
-    background-blend-mode:color-burn;
-        /* border: 11px solid red; */
-     background-blend-mode: color-dodge;
+      background-color: rgb(39, 35, 35);
+    background-blend-mode:soft-light;
+}
+
+.slide .container{
+  
+    width: 50%;
+    text-align: center;
 }
 
 .slide.active {
@@ -264,29 +270,46 @@ img {
 
 .hero-content {
     position: absolute;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%);
-    max-width: 600px;
+    max-width: 50%;
+    /* color: var(--white); */
+      /* color:rgb(24, 36, 27); */
+        font-weight:900;
+}
+.explore{
+    z-index: 30000;
+        position: relative;
+        color: white;
+}
+
+.explore:hover {
+       background-color: var(--primary-color);
     color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow);
 }
 
 .hero-content h1 {
     font-size: 60px;
-    margin-left: 15px;
-    margin-bottom: 20px;
+      margin-bottom: 20px;
     /* color: var(--white); */
-    color:rgb(238, 228, 228);
+    color:rgb(255, 255, 255);
     font-weight:900;
     line-height: 1.1;
-    /* border: 1px solid red; */
-    /* width: 290px; */
-
+/* border: 2px solid red; */
+    /* width: 390px; */
+text-align: center;
 }
 
 .hero-content p {
     font-size: 20px;
     margin-bottom: 30px;
+      color:rgb(251, 252, 251);
+        font-weight:900;
 }
+
+
 
 .hero-nav {
     position: absolute;
@@ -352,9 +375,10 @@ img {
 
 .search-box {
     background-color: var(--white);
-    padding: 30px;
+    /* padding: -10px; */
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    padding-top: -10px !important;
 }
 
 .search-box h2 {
@@ -395,7 +419,7 @@ img {
 #property-search button {
     grid-column: 1 / -1;
     justify-self: center;
-    margin-top: 10px;
+    margin-top: 2px;
 }
 
 /* Featured Properties */
@@ -450,6 +474,7 @@ img {
     border-radius: 3px;
     font-size: 12px;
     font-weight: 600;
+    border: 4px solid red;
 } */
 
 .property-info {
@@ -771,7 +796,6 @@ img {
 
 /* About Section */
 .about-section {
-  
     padding: 100px 0;
     background-color: var(--light-color);
    }

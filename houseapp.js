@@ -44,12 +44,12 @@
             });
             
             // Navigation buttons
-            leftBtn.addEventListener('click', () => updateImage(currentIndex - 1));
-            rightBtn.addEventListener('click', () => updateImage(currentIndex + 1));
+           // leftBtn.addEventListener('click', () => updateImage(currentIndex - 1));
+            //rightBtn.addEventListener('click', () => updateImage(currentIndex + 1));
             
             // Keyboard navigation
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'ArrowLeft') updateImage(currentIndex - 1);
-                if (e.key === 'ArrowRight') updateImage(currentIndex + 1);
-            });
+        //    document.addEventListener('keydown', function(e) {
+          //      if (e.key === 'ArrowLeft') updateImage(currentIndex - 1);
+            //    if (e.key === 'ArrowRight') updateImage(currentIndex + 1);
+            //});
         });
