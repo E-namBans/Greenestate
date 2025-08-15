@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         preloader.classList.add('fade-out');
         setTimeout(() => {
             preloader.style.display = 'none';
-        }, 1800);
+        }, 800);
     }, 1000);
 
     // Mobile Menu Toggle
@@ -297,3 +297,146 @@ function loadProperties(filteredProperties = properties) {
         propertiesGrid.appendChild(propertyCard);
     });
 }
+
+
+
+
+// Property Filter
+document.addEventListener('DOMContentLoaded', function() {
+    const propertySearchForm = document.getElementById('property-search');
+    
+    if (propertySearchForm) {
+        propertySearchForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const location = document.getElementById('location').value;
+            const propertyType = document.getElementById('property-type').value;
+            const priceRange = document.getElementById('price-range').value;
+            const bedrooms = document.getElementById('bedrooms').value;
+            
+            // Filter properties based on search criteria
+            const filteredProperties = properties.filter(property => {
+                // Location filter (simplified for demo)
+                if (location && !property.address.toLowerCase().includes(location.toLowerCase())) {
+                    return false;
+                }
+                
+                // Property type filter
+                if (propertyType && property.type.toLowerCase() !== propertyType.toLowerCase()) {
+                    return false;
+                }
+                
+                // Bedrooms filter
+                if (bedrooms && property.bedrooms < parseInt(bedrooms)) {
+                    return false;
+                }
+                
+                // Price range filter (simplified for demo)
+                if (priceRange) {
+                    const price = parseFloat(property.price.replace(/[^0-9.]/g, ''));
+                    
+                    switch(priceRange) {
+                        case '1m-5m':
+                            if (price < 1000000 || price > 5000000) return false;
+                            break;
+                        case '5m-10m':
+                            if (price < 5000000 || price > 10000000) return false;
+                            break;
+                        case '10m-20m':
+                            if (price < 10000000 || price > 20000000) return false;
+                            break;
+                        case '20m+':
+                            if (price < 20000000) return false;
+                            break;
+                    }
+                }
+                
+                return true;
+            });
+            
+            // Load filtered properties
+            loadProperties(filteredProperties);
+            
+            // Scroll to properties section
+            document.getElementById('properties').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+
+
+
+// Contact Form
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    const newsletterForm = document.getElementById('newsletterForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Simple validation
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            // In a real application, you would send this data to a server
+            console.log('Form submitted:', { name, email, phone, subject, message });
+            
+            // Show success message
+            alert('Thank you for your message! We will contact you soon.');
+            
+            // Reset form
+            contactForm.reset();
+        });
+    }
+    
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('newsletter-email').value;
+            
+            if (!email) {
+                alert('Please enter your email address');
+                return;
+            }
+            
+            // In a real application, you would send this to a server
+            console.log('Newsletter subscription:', email);
+            
+            // Show success message
+            alert('Thank you for subscribing to our newsletter!');
+            
+            // Reset form
+            newsletterForm.reset();
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
