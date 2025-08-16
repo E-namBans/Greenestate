@@ -1,7 +1,20 @@
-h1{
-    margin-top: 186px;
-    margin-bottom: 100px;
-    color: red;
-  
-    text-align: center;
+/* All Properties Page Specific Styles */
+
+
+.search-section{
+    margin-top: 10px;
+}
+.section-header{
+    margin-top: 10px;
+}
+
+.all-properties {
+    padding: 100px 0;
+    background-color: var(--light-color);
+}
+
+.all-properties .properties-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
 }

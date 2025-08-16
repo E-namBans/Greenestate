@@ -169,6 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Property Data
+ // Featured properties (will show on index.html)
 const properties = [
     {
         id: 1,
@@ -179,6 +180,7 @@ const properties = [
         bathrooms: 4.5,
         sqft: 4200,
         type: "House",
+         status: "sale", 
         featured: true,
         image: "Images/img3.jpeg",
         reference:"001"
@@ -186,12 +188,13 @@ const properties = [
     {
         id: 2,
         title: "The Gardens ",
-        price: "$12,750,000",
+        price: "$8,500/mo",
         address: " Accra",
         bedrooms: 5,
         bathrooms: 6,
         sqft: 6800,
         type: "Villa",
+        status: "rent",
         featured: true,
         image: "Images/house2/mainbuilding1.jpeg",
         reference:"002"
@@ -205,6 +208,7 @@ const properties = [
         bathrooms: 8,
         sqft: 12500,
         type: "Mansion",
+         status: "sale", 
         featured: true,
        image: "Images/house3/h3.jpeg",
        reference:"003"
@@ -218,6 +222,7 @@ const properties = [
         bathrooms: 3.5,
         sqft: 2800,
         type: "Apartment",
+          status: "sale", // Added status
         featured: true,
        image: "Images/house4/h4.jpeg",
         reference:"004"
@@ -232,6 +237,7 @@ const properties = [
         bathrooms: 7,
         sqft: 9800,
         type: "Estate",
+         status: "sale", 
         featured: true,
         image: "Images/house5/h5.jpeg",
         reference:"005"
@@ -245,18 +251,81 @@ const properties = [
         bathrooms: 5.5,       
         sqft: 7500,
         type: "Chalet",
+         status: "sale", 
         featured: true,
         image: "Images/house6/h6.jpeg",
         reference:"006"
-    }
+    },
+
+    {
+        id: 7,
+        title: "Intimate Studio Apartment",
+        price: "£25,000,000",
+        address: " Accra",
+        bedrooms: 7,
+        bathrooms: 8,
+        sqft: 12500,
+        type: "Mansion",
+         status: "sale", 
+        featured: false,
+       image: "Images/house3/h3.jpeg",
+       reference:"003"
+    }, 
+
+    // Non-featured properties (will only show on house.html)
+    {
+        id: 7,
+        title: "Beachfront Villa",
+        price: "$25,000/mo",
+        address: "Labadi, Accra",
+        bedrooms: 5,
+        bathrooms: 5,
+        sqft: 6500,
+        type: "Villa",
+        status: "rent", // Added status
+        featured: false,
+        image: "Images/villa1.jpg",
+        reference: "007"
+    },
+    {
+        id: 8,
+        title: "Townhouse for Rent",
+        price: "$8,500/mo",
+        address: "Cantonments, Accra",
+        bedrooms: 4,
+        bathrooms: 3.5,
+        sqft: 3800,
+        type: "Townhouse",
+        status: "rent",
+        featured: false,
+        image: "Images/townhouse1.jpg",
+        reference: "008"
+    },
+
+
+
 ];
 
 // Load Properties
 function loadProperties(filteredProperties = properties) {
-    const propertiesGrid = document.querySelector('.properties-grid');
+    // CHANGE 1: Detect which page we're on
+    const isHousePage = window.location.pathname.includes('propertie.html');
+    
+    // CHANGE 2: Get the correct grid element
+    const propertiesGrid = isHousePage 
+        ? document.querySelector('#all-properties-grid') // For house.html
+        : document.querySelector('.properties-grid'); // For index.html
+    
     propertiesGrid.innerHTML = '';
 
-    filteredProperties.slice(0, 6).forEach(property => {
+    // CHANGE 3: Filter logic for index.html vs house.html
+    let propertiesToShow = filteredProperties;
+    if (!isHousePage) {
+        propertiesToShow = filteredProperties.filter(property => property.featured).slice(0, 6);
+    }
+
+    // CHANGE 4: Add status badge to property card HTML
+    propertiesToShow.forEach(property => {
         const propertyCard = document.createElement('div');
         propertyCard.className = 'property-card slide-up';
         
@@ -264,6 +333,9 @@ function loadProperties(filteredProperties = properties) {
             <div class="property-image">
                 <img src="${property.image}" alt="${property.title}">
                 <span class="property-badge">${property.type}</span>
+                <span class="status-badge ${property.status}">
+                    ${property.status === 'rent' ? 'For Rent' : 'For Sale'}
+                </span>
             </div>
             <div class="property-info">
                 <div class="property-price">${property.price}</div>
@@ -293,6 +365,9 @@ function loadProperties(filteredProperties = properties) {
                 </div>
             </div>
         `;
+
+
+        
         
         propertiesGrid.appendChild(propertyCard);
     });

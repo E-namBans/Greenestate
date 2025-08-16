@@ -64,32 +64,86 @@
     </header>
 
 
-<h1>PAGE UNDER CONSTRUCTION!!!!</h1>
-
-
-
-
-
- <!-- Featured Properties -->
-    <section id="properties" class="featured-properties">
+  <!-- Search Section -->
+    <section class="search-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Featured Properties</h2>
-                <p>Our curated selection of premium properties</p>
-            </div>
+            <div class="search-box">
+                <h2>Find Your Perfect Property</h2>
+                <form id="property-search">
+                    <div class="form-group">
+                        <select id="location" name="location">
+                            <option value="">Select Location</option>
+                            <option value="new-york">Accra</option>
+                            <option value="london">Madina</option>
+                            <option value="paris">Kasoa</option>
+                            <option value="dubai">Tema</option>
+                            <option value="tokyo">Ho</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="property-type" name="property-type">
+                            <option value="">Property Type</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="penthouse">Penthouse</option>
+                            <option value="mansion">Mansion</option>
+                            <option value="land">Land</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="price-range" name="price-range">
+                            <option value="">Price Range</option>
+                            <option value="1m-5m">$1M - $5M</option>
+                            <option value="5m-10m">$5M - $10M</option>
+                            <option value="10m-20m">$10M - $20M</option>
+                            <option value="20m+">$20M+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="bedrooms" name="bedrooms">
+                            <option value="">Bedrooms</option>
+                            <option value="1">1+</option>
+                            <option value="2">2+</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
+                            <option value="5">5+</option>
+                        </select>
+                    </div>
 
-<a href="/house1.html">  <div class="properties-grid">
-                <!-- Property items will be loaded via JavaScript -->
-
-            </div></a>
-            
-          
-            
-            <div class="section-footer">
-                <a href="properties.html" class="btn btn-secondary">View All Properties</a>
+                    <div class="form-group">
+    <select id="property-status" name="property-status">
+        <option value="">All Statuses</option>
+        <option value="sale">For Sale</option>
+        <option value="rent">For Rent</option>
+    </select>
+</div>
+                    
+                    <div>
+ <button type="submit" class="btn btn-primary">Search Properties</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
+
+
+
+ <div class="section-header">
+                <h2>All Available Properties</h2>
+                <p>Browse our complete collection of premium properties</p>
+            </div>
+
+            <div class="properties-grid" id="all-properties-grid">
+                <!-- Properties will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+            
+          
 
 
 
@@ -177,7 +231,9 @@
     </a>
 
     <!-- JavaScript -->
-     <script src="propeties.js" ></script>
+     <script src="propeties.js" > 
+
+     </script>
     <script src="index.js"></script>
     <script src="property-filter.js"></script>
     <script src="contact-form.js"></script>

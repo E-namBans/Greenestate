@@ -169,6 +169,14 @@
                             <option value="5">5+</option>
                         </select>
                     </div>
+
+                    <div class="form-group">
+    <select id="property-status" name="property-status">
+        <option value="">All Statuses</option>
+        <option value="sale">For Sale</option>
+        <option value="rent">For Rent</option>
+    </select>
+</div>
                     
                     <div>
  <button type="submit" class="btn btn-primary">Search Properties</button>
@@ -186,7 +194,7 @@
                 <p>Our curated selection of premium properties</p>
             </div>
 
-<a href="/house1.html">  <div class="properties-grid">
+<a href="/house1.html">  <div class="properties-grid" id="featured-properties-grid">
                 <!-- Property items will be loaded via JavaScript -->
 
             </div></a>
@@ -194,7 +202,7 @@
           
             
             <div class="section-footer">
-                <a href="properties.html" class="btn btn-secondary">View All Properties</a>
+                <a href="properties.html" class="btn btn-secondary">View All Properties   <i class="fas fa-arrow-right"></i> </a>
             </div>
         </div>
     </section>

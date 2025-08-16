@@ -439,6 +439,7 @@ text-align: center;
     overflow: hidden;
     box-shadow: var(--box-shadow);
     transition: var(--transition);
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .property-card:hover {
@@ -475,6 +476,26 @@ text-align: center;
     font-weight: 600;
     /* border: 4px solid red; */
 }
+
+.status-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-badge.sale {
+    background-color: #1e5536; /* Green for sale */
+}
+
+.status-badge.rent {
+    background-color: #2b8150; /* Different green for rent */
+}
+
 
 .property-info {
     padding: 20px;
